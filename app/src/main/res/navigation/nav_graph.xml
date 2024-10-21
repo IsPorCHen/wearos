@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/dateListFragment">
+
+    <fragment
+        android:id="@+id/dateListFragment"
+        android:name="com.bignerdranch.android.prakt24_2.DateListFragment"
+        tools:layout="@layout/fragment_date_list" />
+
+    <fragment
+        android:id="@+id/incomeDetailsFragment"
+        android:name="com.bignerdranch.android.prakt24_2.IncomeDetailsFragment"
+        tools:layout="@layout/fragment_income_details">
+        <argument
+            android:name="selectedDate"
+            app:argType="string" />
+    </fragment>
+
+</navigation>
